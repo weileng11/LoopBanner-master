@@ -34,7 +34,7 @@ class MainActivity : AppCompatActivity() {
         //设置是否自动轮播，默认为true
         lb1.setAutoLoop(false)
         lb1.setCurrentItem(3)
-//        lb1.enableIndicator(false)
+        lb1.enableIndicator(false)
 
 
         //仅仅设置图片资源
@@ -75,6 +75,7 @@ class MainActivity : AppCompatActivity() {
         }
         lb2.setAutoLoop(false)
         lb2.setCurrentItem(2)
+        lb2.enableIndicator(false)
 
         //自定义布局
         lb3.adapter = MyAdapter()
@@ -85,7 +86,8 @@ class MainActivity : AppCompatActivity() {
         super.onStart()
         lb3.adapter?.setNewData(DataCenter.loadEntities())
 
-        lb3.setCurrentItem(2)
+        lb3.setCurrentItem(1)
+        lb3.enableIndicator(false)
     }
 
 
